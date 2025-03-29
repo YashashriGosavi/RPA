@@ -1,0 +1,15 @@
+2A Use two Input dialogs for Numbers and do following calculations and show in Message Box. 
+
+Steps:
+1) create a variable: num1, Int32, Switch/num2, Int32, Switch/ result, String, Switch
+2) Select input dialog box for first number. Input Label: "Enter First Number" / Textbox/ num1
+3) Select input dialog box for second number. Input Label: "Enter Second Number" / Textbox/ num2
+4) Select input dialog box for results and select input type as multiple choice.
+Input Label: "Choose Operation" / Input Type: Multiple choice / Input options array: {"Add","Sub","Mul","Div"} /
+value entered: result 
+5) Go to properties of result and in options add array.  also check Output Result result
+6) Add Switch Activity.  write in Expression : result
+7) Add a case click on the Add case 
+Case: Add
+Add message box  and write: (num1+num2).ToString
+Same as Sub, Mul, Div. _ * /
