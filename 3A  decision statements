@@ -1,0 +1,16 @@
+create an automation UiPath Project using decision statements.
+odd and even
+Steps:
+1) Create a new project.
+2) Create a variable as number Int32 Main Sequence
+3) Add a Input Dialog Activity 
+dialog title enter “check no is even” and in 
+input label type “enter any number” and 
+input type “textbox” and 
+value entered “number” variable with variable type int32.
+4) Add a If Activity 
+condition : number Mod 2=0
+Then activity add a  message box
+Text: “number Is even”+vbCrLf
+Else activity add message box
+text: “number is odd”+vbCrLf
