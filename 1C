@@ -1,0 +1,11 @@
+Use Web Recorder to empty trash in Gmail. Or 
+Create an UiPath Robot which can empty a folder in Gmail solely on basis of recording.
+
+Steps:
+1) Create a new project
+2) Install extension Chrome and Edge. For that go home -> tools-> Extension.
+3)  Click on main sequence and Drag and Drop “Open Browser”. 
+4) In open brwoswer Copy Paste the “Url” of “www.gmail.com” Page. 
+5) In the properties, Select “Browser Type” as edge”. 
+6)  Start Recording.
+write www.gmail.com then eamil paswword login in in:trash delete forever.
