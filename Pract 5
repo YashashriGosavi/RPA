@@ -1,0 +1,8 @@
+Consider an array of names. We have to find out how many of these start with the letter “j” 
+Create an automation where the number of names starting with “j” is counted and the result is 
+displayed.
+
+Steps:
+1) Create a new project
+2) create a variable
+
