@@ -1,6 +1,9 @@
 Use Web Recorder to empty trash in Gmail. Or 
 Create an UiPath Robot which can empty a folder in Gmail solely on basis of recording.
 
+for recorder Go to Project dependencies write click on the manage -> all packages 
+install Uipath.UIAutomation.Activities 24.10.10
+
 Steps:
 1) Create a new project
 2) Install extension Chrome and Edge. For that go home -> tools-> Extension.
