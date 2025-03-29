@@ -1,0 +1,32 @@
+ Create Different type of variable (number, datetime, Boolean, generic, array, data 
+table) and provide default value and show in Message Box.
+
+Steps:
+1) create a project 
+2) Create a variable
+num1 is in int32 format scope mainsequence with defalt 10.
+boolean1 is in boolean format scope mainsequence with defalt True.
+string 1 is in string format scope mainsequence and default value is "Yashashri".
+datetime1 is in DateTime type scope mainsequence and value is now.
+array1 is in String[] format scope mainsequence and value is {"Yashashri","Sujan"}
+variable1 is in string format scope mainsequence
+dt1 is in DataTable format scope mainsequence
+result is in string format scope mainsequence
+
+3) take a message box and write in 
+"Integer is :- "+num1.ToString+vbCrLf+
+"String is :- "+String1+vbCrLf+
+"Boolean is :- "+boolean1.ToString+vbCrLf+
+"Current date and time is :- "+datetime1.ToString
+
+
+OR Next sequence data table
+1) Now for data table search in the activity panel for “build data table” Data table and 
+2) create variable for the same “dt1” and variable type is Data Table.
+3) Add a roll number and name in table and in Build data table Properties output dt1
+4) Add a activity  Output Data Table as Text Activity and Data Table dt1
+and properties of that add Output as result
+5) take the message box from activity panel and then in text give result
+
+
+
