@@ -1,0 +1,13 @@
+Create an automation UiPath Project Using looping statement (Dummy List of fruit).
+
+Steps:
+1) Create a new project.
+2) Create a variable as counter Int32 Main Sequence and
+list_of_fruit String[] Main Sequence
+3) drop the “assign activity” and in save to add counter variable with 
+and value to save add 0. 
+4) darg assign activity  and in save to add list_of_fruit variable and 
+value to save add {"Mango","Banana","Apple","PineApple","Cherry" }.
+5) Add a for Each activity  in as In add list_of_fruit.
+In Body add a assign activity in "Save to" add counter and in “value to save” give counter+1. 
+add a message box in the add "value of counter "+counter.ToString+vbCrLf+"fruit is "+currentText+vbCrLf
