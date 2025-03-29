@@ -1,0 +1,15 @@
+ Sequence Based Project.
+
+1A: Use two Input Dialogs for First Name and Last Name, store in a variable and show in Message Box. 
+
+Steps:
+1) Create a new project.
+2) click on the Design New Sequence give the name and cretae sequence1 .
+3) Create 3 Variables Firstname with string and scope sequene1 and same as Lastnem and RollNo
+4) Drag and Drop “Input Dialog” for taking input of “First Name”: 
+ Input Lable write "Enter Your Name" / Text Box/ Firstname as value
+Same as create Last name and Roll No.
+5) Drag Nessage box and write =  FirstName+""+ LastName+ Environment. NewLine+RollNo  OR
+FirstName & " " & LastName & Environment.NewLine & "Roll Number: " & RollNO
+
+ 
