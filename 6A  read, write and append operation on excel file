@@ -1,0 +1,14 @@
+Create an application automating the read, write and append operation on excel file. 
+
+Steps:
+1) Create a new project
+2) Createa a varibale
+dt1 DataTable Do 
+counter1 Int32 Do
+saving Int32 mainsequence
+varibale1 String mainsequence
+3)  create an excel with employee ID name salary and expenses and saving
+4) download the UiPath.Excel.Activities for that manage - allpackage
+5) take the “excel application scope” from classic activity(filter symbol) in main sequence
+6) 
+
