@@ -1,0 +1,14 @@
+Automate the following screen scraping methods using UiPath Full Test (Invoice PDF) 
+3 PDS (invoice) Extract and put value in Excel. 
+
+Download dependencies
+1) UiPath.IntegrationService.Activities
+2) UiPath.Mail.Activities
+3) UiPath.PDF.Activities
+4) UiPath.System.Activities
+5) UiPath.UIAutomation.Activities
+
+
+Steps:
+1) create a project
+2) 
