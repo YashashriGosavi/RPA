@@ -10,7 +10,8 @@ Download
 Steps:
 1) createa new project 
 1) Create a variable
-mail  
+mail  System.Collections.Generic.IEnumerable<System.Net.Mail.MailMessage>  Do
+mailMessages  System.Collections.Generic.List<System.Net.Mail.MailMessage>  Main sequence
 2) Drag and drop “use desktop outlook app” activity
 3) In Do part add a activity "send outlook mail message"
 In a To add "yashashrigosavi@outlook.com"
@@ -20,3 +21,9 @@ Body add "Hello Yashashri Gosavi"
 add a Text as "Mail Sent"
 5) After that drag a "get outlook mail message" activity  in do loop
 6) Drag  “for each email activity” after get outlook message 
+in email from create variable “mail” and email limits to first is “5”.
+7) Drag “save outlook mail message” activity in do loop of for each email 
+and in save to folder “give path to any folder”. for eg "C:\Users\COM\Documents\UiPath\02_Pract7C"
+and run it see mail in outlook
+
+
