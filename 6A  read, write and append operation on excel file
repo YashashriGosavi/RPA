@@ -7,8 +7,22 @@ dt1 DataTable Do
 counter1 Int32 Do
 saving Int32 mainsequence
 varibale1 String mainsequence
-3)  create an excel with employee ID name salary and expenses and saving
+3)  create an excel with employee ID name salary and expenses and saving in saving not add values save it EmployeeData.xlsx
 4) download the UiPath.Excel.Activities for that manage - allpackage
 5) take the “excel application scope” from classic activity(filter symbol) in main sequence
-6) 
+6) Drag and drop “excel application scope” activity 
+in workbookpath add "EmployeeData.xlsx"
+in Do drag and drop the “Read range” activity from classic appintegration excel with "Sheet1"
+7) drag the “For each Row in data Table” activity  after Read range add these
+in DataTable add dt1 varivale. Item name as CurrentRow
+8) In Body drag Assign activity save to add as counter1 and value to save add to counter1 +1
+9) again add a Assign activity save to add as saving and value to save add to 
+(CInt(CurrentRow("Salary")) -CInt(CurrentRow("Expences")))
+10) after assign add a write cell activity from classic appintegration excel
+add "Sheet1" and saving.Tostring
+11) after foe each loop add amsg box activity add “Data Calculated Successfully”
+
+
+
+
 
