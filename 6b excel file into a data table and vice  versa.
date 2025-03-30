@@ -1,0 +1,27 @@
+Create automate the process to extract data from an excel file into a data table and vice 
+versa.
+
+Steps:
+1) Create a new project
+2) Createa a varibale
+dt DataTable Do 
+res String Do
+result DataTable Do
+ress String Do
+variable1 String Do
+3)create an excel with employee ID name salary and expenses save it EmployeeData.xlsx
+4) download the UiPath.Excel.Activities for that manage - allpackage
+5) take the “excel application scope” from classic activity(filter symbol) in main sequence
+6) Drag and drop “excel application scope” activity from classic appintegration excel
+in workbookpath add "EmployeeData.xlsx"
+7) In Do part add Read range activity from classic appintegration excel
+already with "sheet1" in property of read range add a output datatable dt
+8)  take the “output data table as text” activity panel 
+datatbele as add a dt  and in properties output add a res varibale
+9) add a write range activity from classic appintegration excel
+add a "Sheet2" and dt variable  in properties check the Add header 
+10) add a message box after then add msg  “writing completed” and
+in properties add output as ress
+
+
+
