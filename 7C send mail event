@@ -1,0 +1,22 @@
+Automate the process of send mail events. 
+yashashrigosavi@outlook.com
+Yash@2207
+
+Download 
+2) UiPath.Mail.Activities
+3) UiPath.PDF.Activities
+4) UiPath.System.Activities
+
+Steps:
+1) createa new project 
+1) Create a variable
+mail  
+2) Drag and drop “use desktop outlook app” activity
+3) In Do part add a activity "send outlook mail message"
+In a To add "yashashrigosavi@outlook.com"
+Suject addd "Practical7C"
+Body add "Hello Yashashri Gosavi"
+4) after "send outlook mail message" activity add a write line activity
+add a Text as "Mail Sent"
+5) After that drag a "get outlook mail message" activity  in do loop
+6) Drag  “for each email activity” after get outlook message 
