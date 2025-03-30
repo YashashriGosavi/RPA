@@ -1,0 +1,20 @@
+Consider an array of names. We have to find out how many of these start with the letter “j” 
+Create an automation where the number of names starting with “j” is counted and the result is 
+displayed.
+
+Steps:
+1) Create a new project
+2) create a variable
+fisrt_letter  String mainsequence
+arr_str String[] mainsequence
+count1 Int32 mainsequence
+3)  take assign activity 
+in save to add arr_str variable  and value to save add {"Yashashri","Sujan","Sarvesh","Shweta","Riya"}
+4) add for each activity in In add arr_str
+5) In Body of for each activity add a assign activity in save to add first_letter and
+value to save add currentText.ToString.SubString(0,1)
+6) in body after assign activity add If activity in Condition add first_letter.ToLower.Equals("s")
+in Then part of if activity add assign activity in save to add count1 and value to save add count1+1
+7)  then in else loop drag and drop “continue activity”. 
+8) Take message box activity inside the for each activity
+"performed By 02_Yashahsri Gosavi" + vbCrLf + "Total No.Starting With Letter S: " +count1.ToString()
