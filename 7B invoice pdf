@@ -11,4 +11,29 @@ Download dependencies
 
 Steps:
 1) create a project
-2) 
+create a variable
+ocr_text  String Do
+extractTextResults  System.Collections.Generic.IEnumerable<system.String>  Do
+result String Mainsequence
+
+2) download the 3 invoice pdf in same folder.all 3 pdf in same folder name as pdf
+3) Drag “for each file in folder” activity 
+In Path add a "C:\Users\COM\Documents\UiPath\02_Pract7B\pdf" 
+4) In Do part add a "application use browser"activity 
+Click on the Indicate application and and take the New tab click.
+5) Another Do part add a "write Line" Activity 
+in Text add as CurrentFile.ToString
+6) after write line add "Read pdf with OCR" activity
+in FileName add as CurrentFile.ToString
+7) drag “tesseract ocr” activity in read pdf with ocr and in 
+property panel in output text write “ocr_txt”.
+in "Read pdf with OCR" activity properties add a output as ocr_text
+8) Drag “message” box after pdf with ocr and type text “ocr_txt”.
+9) After the message box drag “extract text” activity and in 
+source text type ocr_txt, 
+what to extract “values between two strings”, 
+starting text “invoice” 
+Ending text “invoice” 
+and in property panel create variable for first extracted text as result.
+all extracted text as extractTextResults
+10) add a msg box activity add a Text as result 
