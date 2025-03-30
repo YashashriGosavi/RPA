@@ -1,0 +1,14 @@
+8A] Aim: Demonstrate the use of config files in UiPath.
+
+Steps:
+1) Create a variable
+Config_DT  DataTable  Main Sequence
+Config_Dic  System.Collections.Generic.Dictionary<System.String, System.Object>   Main Sequence
+2) Create and excel file and save that file in Ui path document - project folder. like Book1.xlxs
+Name	Value	Description
+Company_name	Gmail	This is company Name
+Company_ID	100	This is company ID
+Company_Url	www.gmail.com	This is company Url
+3) Drag  “Assign Activity” and in save to Config _Dic variable 
+and value to save give New Dictionary(of String, Object) 
+4) 
