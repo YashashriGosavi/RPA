@@ -11,4 +11,18 @@ Company_ID	100	This is company ID
 Company_Url	www.gmail.com	This is company Url
 3) Drag  “Assign Activity” and in save to Config _Dic variable 
 and value to save give New Dictionary(of String, Object) 
-4) 
+4) Drag “excel application scope” from classic activity in the main sequence after 
+assign activity and then give the path of excel which we created early.
+"Book1.xlsx"
+5)  Drag and drop “read range” activity in do loop of excel application scope and in property 
+panel in output text “Config_DT”.
+6) Drag and drop the “for each row in data table” activity after read range activity and in data 
+table give “Config_DT” variable 
+7) body part drag and drop “assign activity” and in 
+save to give Config_Dic(CurrentRow(“Name”).ToString) and in value to save give 
+“CurrentRow(“Value”)”.
+8) Drag message box in main sequence outside the do loop and type the message 
+"Company name "+Config_Dic("Company_name").ToString+vbCrLf+  
+"Company ID "+Config_Dic("Company_ID").ToString+vbCrLf+  
+"Company Url "+Config_Dic("Company_Url").ToString+vbCrLf+  
+"Performed by 02_Yashahsri Gosavi"
