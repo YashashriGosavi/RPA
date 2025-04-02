@@ -1,6 +1,12 @@
  Automate any process using basic recording (Existing Notepad).
 
+for recorder Go to Project dependencies write click on the manage -> all packages 
+install Uipath.UIAutomation.Activities 24.10.10
+
  Steps:
  1) Create a new project
  2) Activity panel search for use Application/Browser. 
- 3) 
+ 3) click on the recorder and record the steps open thenotepad write 
+the line save it then close 
+4) add message box with practical done.
+
