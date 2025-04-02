@@ -1,0 +1,35 @@
+8B] Aim: Demonstrate the Exception handling in UiPath. 
+
+1) Create a variable
+Config_DT  DataTable  Main Sequence
+Config_Dic  System.Collections.Generic.Dictionary<System.String, System.Object>   Main Sequence
+2) Create and excel file and save that file in Ui path document - project folder. like Book1.xlxs
+Name	Value	Description
+Company_name	Gmail	This is company Name
+Company_ID	100	This is company ID
+Company_Url	www.gmail.com	This is company Url
+3) Drag  “Assign Activity” and in save to Config _Dic variable 
+and value to save give New Dictionary(of String, Object) 
+4) Drag “excel application scope” from classic activity in the main sequence after 
+assign activity and then give the path of excel which we created early.
+"Book1.xlsx"
+5)  Drag and drop “read range” activity in do loop of excel application scope and in property 
+panel in output text “Config_DT”.
+6) Drag and drop the “for each row in data table” activity after read range activity and in data 
+table give “Config_DT” variable 
+7) body part drag and drop “assign activity” and in 
+save to give Config_Dic(CurrentRow(“Name”).ToString) and in value to save give 
+“CurrentRow(“Value”)”.
+8) Drag message box in main sequence outside the do loop and type the message 
+"Company name "+Config_Dic("Company_name").ToString+vbCrLf+  
+"Company ID "+Config_Dic("Company_ID").ToString+vbCrLf+  
+"Company Url "+Config_Dic("Company_Url").ToString+vbCrLf+  
+"Performed by 02_Yashahsri Gosavi"
+
+9) In same project pract8A you have to take “try catch” activity in main sequence and then 
+minimize all the activity of excel one which we have perform early and place all activity in 
+try block.
+10) In try catch activity in body part add  “message box” and type exception.ToString
+11) In finally take the “message box” then type “try catch execution in executed” and run 
+12) To catch the exception, make the changes in excel sheet range by changing the “sheet1” to 
+“sheet2”. 
