@@ -18,6 +18,7 @@ result is in string format scope mainsequence
 "String is :- "+String1+vbCrLf+
 "Boolean is :- "+boolean1.ToString+vbCrLf+
 "Current date and time is :- "+datetime1.ToString
+"Array items are: " + String.Join(", ", array1)
 
 
 OR Next sequence data table
